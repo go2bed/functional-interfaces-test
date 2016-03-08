@@ -1,4 +1,4 @@
-package crocodile;
+package my_own_fi.crocodile;
 
 /**
  * This our own Functional Interface with
@@ -14,6 +14,6 @@ public interface Crocodile {
     }
 
     default String lie(int time) {
-        return "The crocodile is lying on a coast for " + time + " hours" ;
+        return "The my_own_fi.crocodile is lying on a coast for " + time + " hours" ;
     }
 }

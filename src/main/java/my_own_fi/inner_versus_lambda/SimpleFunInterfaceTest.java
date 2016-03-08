@@ -1,4 +1,4 @@
-package inner_versus_lambda;
+package my_own_fi.inner_versus_lambda;
 
 
 /**

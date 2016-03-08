@@ -1,4 +1,4 @@
-package crocodile;
+package my_own_fi.crocodile;
 
 /**
  * Testing class for functional Interfaces

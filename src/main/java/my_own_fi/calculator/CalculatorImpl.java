@@ -1,4 +1,4 @@
-package calculator;
+package my_own_fi.calculator;
 
 /**
  * Testing class for functional Interfaces

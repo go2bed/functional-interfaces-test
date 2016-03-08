@@ -1,4 +1,4 @@
-package calculator;
+package my_own_fi.calculator;
 
 /**
  * This our own Functional Interface with

@@ -35,6 +35,21 @@ public class OptionalImpl {
         String nullableString = "";
         Optional<String> str2 = Optional.of(nullableString);
         System.out.println(str2);
+
+
+        Optional<String> optional = Optional.of("bam");
+
+        // Return {@code true} if there is a value present, otherwise {@code false}
+        System.out.println(optional.isPresent());           // true
+
+        //  If a value is present in this {@code Optional}, returns the value,
+        // otherwise throws {@code NoSuchElementException}.
+        System.out.println(optional.get());                 // "bam"
+
+        //Return the value if present, otherwise return {@code other}.
+        System.out.println(optional.orElse("fallback"));    // "bam"
+
+        optional.ifPresent((s) -> System.out.println(s.charAt(0)));     // "b"
     }
 }
 

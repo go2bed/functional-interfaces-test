@@ -21,7 +21,6 @@ public class FunctionImpl {
         //In lambda expression method will looks like this:
         Function<Integer, String> converter1 = i -> Integer.toString(i);
 
-
         //Result will be depending from length of obtained string
         System.out.println(converter.apply(3).length());
         System.out.println(converter.apply(30).length());

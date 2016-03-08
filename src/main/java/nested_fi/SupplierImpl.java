@@ -9,6 +9,7 @@ import java.util.function.Supplier;
 public class SupplierImpl {
 
     public static void main(String[] args) {
+        //This method just get us some type
         Supplier<String> stringSupplier = new Supplier<String>() {
             @Override
             public String get() {

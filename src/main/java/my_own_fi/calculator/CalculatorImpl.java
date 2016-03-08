@@ -28,7 +28,6 @@ public class CalculatorImpl {
                 calculatorImpl.operateBinary(40, 5, addition));
         System.out.println("20 - 10 = " +
                 calculatorImpl.operateBinary(20, 10, subtraction));
-
         System.out.println("5 * 5 = " +
                 calculatorImpl.operateBinary(5, 5, multiplication));
     }

@@ -14,6 +14,6 @@ public interface Crocodile {
     }
 
     default String lie(int time) {
-        return "The my_own_fi.crocodile is lying on a coast for " + time + " hours" ;
+        return "The crocodile is lying on a coast for " + time + " hours" ;
     }
 }

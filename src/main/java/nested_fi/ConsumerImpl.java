@@ -3,53 +3,28 @@ package nested_fi;
 import java.util.function.Consumer;
 
 /**
- * Implementation of Consumer
- * Functional Interface work
- * This is a functional interface and can therefore
- * be used as the assignment target for a lambda expression
- * or method reference.
+ * Functional Interface Consumer
+ * Represents an operation that accepts a single input argument
+ * and returns no result.Unlike most other functional interfaces,
+ * Consumer is expected to operate via side-effects.
  */
 public class ConsumerImpl {
-    private String name;
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
 
     public static void main(String[] args) {
-        //Inner class presentation of Consumer FI
-        consumerInterfase(new Consumer<ConsumerImpl>() {
+
+        //This method will accept String argument and make in lower case
+        Consumer<String> stringConsumer = new Consumer<String>() {
             @Override
-            public void accept(ConsumerImpl consumer) {
-                consumer.setName("Was eaten");
-                System.out.println(consumer);
+            public void accept(String x) {
+                System.out.println(x.toLowerCase());
             }
-        });
+        };
+        stringConsumer.accept("SoME ExPreSSioN");
 
 
-        //And lambda presentation of Consumer FI
-        consumerInterfase(consumer -> {
-            consumer.setName("Was eaten");
-            System.out.println(consumer);
-        });
-
-    }
-
-
-    public static void consumerInterfase(Consumer<ConsumerImpl> consumerInterface) {
-        ConsumerImpl consumer = new ConsumerImpl();
-        consumerInterface.accept(consumer);
-    }
-
-    @Override
-    public String toString() {
-        return "ConsumerImpl{" +
-                "name='" + name + '\'' +
-                '}';
+        //In lambda expression method will looks like this:
+        Consumer<String> stringConsumer1 = x -> System.out.println(x.toLowerCase());
+        stringConsumer1.accept("SoME OthER WoRD");
     }
 }
+

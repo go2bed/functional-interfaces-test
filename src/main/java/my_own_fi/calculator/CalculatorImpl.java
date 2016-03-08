@@ -6,6 +6,8 @@ package my_own_fi.calculator;
  */
 public class CalculatorImpl {
 
+    //Method, that takes an interface arguments
+    //and it's instance with arguments for the function description
     public int operateBinary(int a, int b, Calculator op) {
         return op.operation(a, b);
     }
@@ -14,9 +16,13 @@ public class CalculatorImpl {
 
         CalculatorImpl calculatorImpl = new CalculatorImpl();
 
+        // We pass the values of function sign
+        // to the new exemplar of FunctionalInterface
         Calculator addition = (a, b) -> a + b;
         Calculator subtraction = (a, b) -> a - b;
         Calculator multiplication = (a, b) -> a * b;
+
+
 
         System.out.println("40 + 5 = " +
                 calculatorImpl.operateBinary(40, 5, addition));
